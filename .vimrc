@@ -14,6 +14,7 @@ set number
 call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/seoul256.vim'
+Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 
