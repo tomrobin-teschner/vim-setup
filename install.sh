@@ -6,10 +6,11 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 # copy .vimrc file into home folder of current user
 cp .vimrc ~/.
 
-# print usage instructions
-echo 
-echo "// When using vim for the first time, type the following:"
-echo "//"
-echo "// :PlugInstall"
-echo "//"
-echo "// This will install all required plug-ins and resolve dependencies."
+# special instruction for YouCompletMe package
+CURRENT_DIR=$(pwd)
+cd ~/.vim/plugged/YouCompleteMe
+python3 install.py --all
+cd $CURRENT_DIR
+
+# install plug ins
+vim +PlugInstall +qall
