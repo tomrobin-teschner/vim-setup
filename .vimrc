@@ -18,6 +18,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
 Plug 'Valloric/YouCompleteMe'
 Plug 'junegunn/seoul256.vim'
+Plug 'mg979/vim-visual-multi'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
