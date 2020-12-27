@@ -21,6 +21,8 @@ Plug 'junegunn/seoul256.vim'
 Plug 'mg979/vim-visual-multi'
 Plug 'airblade/vim-gitgutter'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -39,7 +41,7 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
     \ quit | endif
 
 " Start NERDTree and put the cursor back in the other window.
-autocmd VimEnter * NERDTree 
+autocmd VimEnter * NERDTree
 
 " Open the existing NERDTree on each new tab.
 autocmd BufWinEnter * silent NERDTreeMirror
@@ -53,6 +55,9 @@ let g:VM_maps['Find Subword Under'] = '<C-d>'
 highlight ExtraWhitespace ctermbg=red guibg=red
 let g:better_whitespace_enabled=1
 let g:strip_whitespace_on_save=1
+
+" === vim-airline (theme) specific setup
+let g:airline_theme='Cobalt 2'
 
 " === custom key bindings ===
 
