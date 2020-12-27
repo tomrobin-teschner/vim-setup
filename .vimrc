@@ -46,10 +46,20 @@ autocmd BufWinEnter * silent NERDTreeMirror
 
 " === vim-visual-multi speific setup ===
 let g:VM_maps = {}
-let g:VM_maps['Find Under']         = '<C-d>'           " replace C-n
-let g:VM_maps['Find Subword Under'] = '<C-d>'           " replace visual C-n
+let g:VM_maps['Find Under']         = '<C-d>'
+let g:VM_maps['Find Subword Under'] = '<C-d>'
 
 " === vim-better-whitespace specific setup ===
 highlight ExtraWhitespace ctermbg=red guibg=red
 let g:better_whitespace_enabled=1
 let g:strip_whitespace_on_save=1
+
+" === custom key bindings ===
+
+" move current line up / down
+nnoremap <A-Down> :m .+1<CR>==
+nnoremap <A-Up> :m .-2<CR>==
+inoremap <A-Down> <Esc>:m .+1<CR>==gi
+inoremap <A-Up> <Esc>:m .-2<CR>==gi
+vnoremap <A-Down> :m '>+1<CR>gv=gv
+vnoremap <A-Up> :m '<-2<CR>gv=gv
