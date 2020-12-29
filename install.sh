@@ -7,13 +7,13 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 cp .vimrc ~/.
 
 # developer tools required for YouCopleteMe
-sudo apt-get -y install cmake
-sudo apt-get -y install python3-dev
-sudo apt-get -y install mono-complete
-sudo apt-get -y install golang
-sudo apt-get -y install nodejs
-sudo apt-get -y install default-jdk
-sudo apt-get -y install npm
+sudo apt -y install cmake
+sudo apt -y install python3-dev
+sudo apt -y install mono-complete
+sudo apt -y install golang
+sudo apt -y install nodejs
+sudo apt -y install default-jdk
+sudo apt -y install npm
 
 # special instruction for YouCompletMe package
 CURRENT_DIR=$(pwd)
