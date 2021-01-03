@@ -12,6 +12,9 @@ set colorcolumn=121
 set nowrap
 set number
 
+" style *.tpp files lie cpp files
+autocmd BufNewFile,BufRead,BufReadPost *.tpp set filetype=cpp
+
 " deal with plug-ins
 call plug#begin('~/.vim/plugged')
 
