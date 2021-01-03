@@ -95,3 +95,6 @@ vnoremap <C-S-k> <ESC>dd==gv
 " shift focus to next window
 nnoremap <Leader><Right> <C-w>w
 nnoremap <Leader><Left> <C-w>p
+
+" adjust color scheme
+highlight Pmenu ctermfg=253 ctermbg=237 guifg=#dadada guibg=#3a3a3a
