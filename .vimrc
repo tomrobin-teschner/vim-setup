@@ -28,6 +28,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jiangmiao/auto-pairs'
 Plug 'rhysd/vim-clang-format'
+Plug 'octol/vim-cpp-enhanced-highlight'
 
 call plug#end()
 
@@ -63,7 +64,7 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 let g:better_whitespace_enabled=1
 let g:strip_whitespace_on_save=1
 
-" === vim-airline (theme) specific setup
+" === vim-airline (theme) specific setup ===
 let g:airline_theme='Cobalt 2'
 
 " === vim-clang-format specific setup ===
@@ -71,6 +72,14 @@ let g:clang_format#detect_style_file = 1
 nnoremap <C-S-c> :ClangFormat<CR>
 inoremap <C-S-c> <ESC>:ClangFormat<CR>==gi
 vnoremap <C-S-c> <ESC>:ClangFormat<CR>==gv
+
+" === vim-cpp-enhanced-highlight specific setup ===
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_posix_standard = 1
+" let g:cpp_experimental_template_highlight = 1
+let g:cpp_concepts_highlight = 1
 
 " === custom key bindings ===
 
