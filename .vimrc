@@ -30,6 +30,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'rhysd/vim-clang-format'
 Plug 'octol/vim-cpp-enhanced-highlight'
 
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+
 call plug#end()
 
 " set up colour scheme to be used
@@ -110,3 +114,6 @@ nnoremap <Leader><Left> <C-w>p
 
 " adjust color scheme
 highlight Pmenu ctermfg=253 ctermbg=237 guifg=#dadada guibg=#3a3a3a
+
+" change default keybinding for snippets (conflicts with you complete me)
+imap <C-CR> <Plug>snipMateNextOrTrigger

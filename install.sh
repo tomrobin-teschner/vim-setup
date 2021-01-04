@@ -6,6 +6,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 # copy .vimrc file into home folder of current user
 cp .vimrc ~/.
 
+# copy snippets into snippets folder
+mkdir -p ~/.vim/snippets && cp cpp.snippets ~/.vim/snippets/
+
 # developer tools required for YouCopleteMe
 sudo apt -y install cmake
 sudo apt -y install python3-dev
